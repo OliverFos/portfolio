@@ -1,0 +1,53 @@
+body {
+font: 1.2em "Fira Sans", sans-serif;
+text-align: center;
+background-color: #1e2124; 
+}
+
+div {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color :  #36393e;
+width: 75%;
+border: 15px white;
+color: white;
+border-radius: 25px;
+}
+
+h3 {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color :  #7289da;
+width: 75%;
+border: 15px white;
+border-radius: 25px;
+}
+
+h1 {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color :  #7289da;
+width: 75%;
+border: 15px white;
+border-radius: 25px;
+}
+
+
+
+
+a{
+color: #7289da;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  background-color:#36393e; 
+  padding: 3rem 0;
+}
