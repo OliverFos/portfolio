@@ -25,16 +25,14 @@ ul, li{
   padding: 0 1rem;
   background-color:#1e2124; 
   padding: 3rem 0;
+border-radius: 25px;
 }
 .wrapper{
   background: #282b30;
   padding: 2rem;
   border-radius: 15px;
 }
-h1{
-  font-size: 1.1rem;
-  font-family: sans-serif;
-color: white;
+
 }
 .sessions{
   margin-top: 2rem;
@@ -89,19 +87,46 @@ p{
   }
 }
 
-a{
-font-family: 'Poppins', sans-serif;
+
+
+body {
+text-align: left;
+background-color:#282b30;
+font-family: Consolas, monaco, monospace; 
+
+}
+
+
+h3 {
 margin-left: auto;
 margin-right: auto;
 text-align: center;
-color: #7289da;
 width: 75%;
-border: 15px white;
+
 }
 
-body {
-font: 1.2em "Fira Sans", sans-serif;
-text-align: left;
-background-color:#282b30; 
+h1 {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color :  #5865f2;
+width: 75%;
+border: 15px white;
+border-radius: 25px;
+color: white;
+}
 
+a:link, a:visited {
+  background-color: #36393f;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: black;
 }
