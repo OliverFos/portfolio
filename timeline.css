@@ -1,0 +1,132 @@
+
+@mixin tablet-and-up {
+	@media screen and (min-width: 769px) { @content; }
+}
+@mixin mobile-and-up {
+    @media screen and (min-width: 601px) { @content; }
+}
+@mixin tablet-and-down  {
+    @media screen and (max-width: 768px) { @content; }
+}
+@mixin mobile-only {
+    @media screen and (max-width: 600px) { @content; }
+}
+
+
+ul, li{
+	list-style: none;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+	background-color:#1e2124; 
+	padding: 3rem 0;
+	border-radius: 25px;
+}
+.wrapper{
+	background: #282b30;
+	padding: 2rem;
+	border-radius: 15px;
+}
+}
+
+.sessions{
+	margin-top: 2rem;
+	border-radius: 12px;
+	position: relative;
+}
+
+li{
+	padding-bottom: 1.5rem;
+	border-left: 1px solid #abaaed;
+	position: relative;
+	padding-left: 20px;
+	margin-left: 10px;
+	&:last-child{
+	border: 0px;
+    padding-bottom: 0;
+}
+
+  &:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #4e5ed3;
+    box-shadow: 3px 3px 0px #bab5f8;
+    box-shadow: 3px 3px 0px #bab5f8;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+}
+
+.time{
+	color: #424549;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	@include mobile-and-up{
+		font-size: .9rem;
+	}
+	@include mobile-only{
+    margin-bottom: .3rem;
+    font-size: 0.85rem;
+}
+}
+
+p{
+	color: #ffffff;
+    font-family: sans-serif;
+	line-height: 1.5;
+	margin-top:0.4rem;
+
+  @include mobile-only{
+	font-size: .9rem;
+	}
+}
+
+
+body {
+	text-align: left;
+	background-color:#282b30;
+	font-family: Consolas, monaco, monospace; 
+}
+
+h3 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 75%;
+}
+
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color :  #5865f2;
+	width: 75%;
+	border: 15px white;
+	border-radius: 25px;
+	color: white;
+}
+
+a:link, a:visited {
+	background-color: #36393f;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+a:hover, a:active {
+	background-color: white;
+	color: black;
+}
+
